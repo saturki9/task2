@@ -1,0 +1,207 @@
+body {
+    background-color: black;
+    color: white;
+  }
+  .navbar {
+    background-color: black;
+    padding: 10px 20px; 
+    display: flex; /* يسمح بمحاذاة العناصر أفقيًا */
+    justify-content:end; /* يجعل الـ brand في اليسار والقائمة في اليمين */
+    align-items: center; 
+}
+
+.navbar-nav {
+  margin-left: auto;
+  margin-right: 0;
+}
+  .navbar-brand img {
+    width: auto; /* يحافظ على النسبة بين العرض والارتفاع */
+    height: 30px; /* أو أي ارتفاع يناسبك */
+    max-height: 40px; /* يحدد أقصى ارتفاع للشعار */
+    object-fit: contain; /* يضمن عدم تمدد أو تشوه الصورة */
+  }
+
+  .nav-link {
+    color: #ffffff;
+     margin-left: 15px;
+    
+  }
+
+  .nav-link.active {
+    color: #ff4c4c!important;
+  }
+
+  /*home*/
+
+  .container-home {
+    margin-bottom: 50px;
+    padding: 60px;
+
+  }
+  
+
+
+  .profile-image {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  /*About me*/
+  .about-section {
+    padding: 80px 0;
+    background-color: rgb(32, 32, 32);
+}
+
+.about-title {
+    text-align: center;
+    color: #ff4c4c;
+    font-family: "Berkshire Swash", serif; 
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.about-subtitle {
+    text-align: center;
+    color: #888;
+    margin-bottom: 40px;
+}
+
+.profile-pic {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  padding-left: 60px;
+}
+
+.name-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.name-title:after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #ff4c4c;
+  margin-top: 15px;
+}
+
+.info-text {
+  color: #888;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.personal-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.info-item i {
+  color: #ff4c4c;
+  margin-right: 10px;
+  width: 20px;
+}
+
+.info-item span {
+  color: #888;
+}
+
+.info-text {
+  padding-right: 40px;
+}
+@media (max-width: 768px) {
+  .personal-info {
+      grid-template-columns: 1fr;
+  }
+}
+
+i {
+  font-size: 24px; 
+}
+
+/*services*/
+.services-section {
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  color: #ff4c4c;
+  font-size: 2.5rem;
+  font-family: "Berkshire Swash", serif; 
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #888;
+  margin-bottom: 40px;
+}
+
+.service-card {
+  background-color: #111;
+  padding: 30px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  background-color: #1a1a1a;
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  color: #ff4c4c;
+  margin-bottom: 20px;
+}
+
+.service-title {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.service-description {
+  color: #888;
+  line-height: 1.6;
+}
+
+.price-tag {
+  color: #ff4c4c;
+  font-size: 1.2rem;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.form {
+  background-color: rgb(32, 32, 32);
+  padding: 80px 30px;
+}
+
+.form input{
+  background-color: rgba(0, 0, 0, 0.683);
+  border: none; 
+  border-radius: 0;
+  
+}
+
+.form-label {
+  color: #888
+}
+
